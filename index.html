@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanjeet Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skills-contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo" data-text="Amanjeet">Amanjeet</a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li class="active">
+                        <a href="index.html"><i class="ri-home-smile-line"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/artworks.html"><i class="ri-gallery-line"></i> Sketches</a>
+                    </li>
+                    <li>
+                        <a href="pages/projects.html"><i class="ri-folder-3-line"></i> Projects</a>
+                    </li>
+                    <li>
+                        <a href="pages/contacts.html"><i class="ri-chat-1-line"></i> Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-container">
+        <nav class="mobile-nav">
+            <a href="index.html" class="active"><i class="ri-home-smile-line"></i> Home</a>
+            <a href="pages/artworks.html"><i class="ri-gallery-line"></i> Sketches</a>
+            <a href="pages/projects.html"><i class="ri-folder-3-line"></i> Projects
+            </a>
+            <a href="pages/contacts.html"><i class="ri-chat-1-line"></i> Contacts</a>
+        </nav>
+    </div>
+
+    <div class="mobile-nav-overlay"></div>
+
+    <main>
+        <canvas id="backgroundCanvas"></canvas>
+        <div class="container">
+            <section class="intro">
+                <div class="intro-content">
+                    <h1 style="font-weight: bold">
+                        <span style="color: #10b981">Hi! I Am</span>
+                        <span style="color: #f43f5e">Amanjeet</span>
+                    </h1>
+                    <div class="tags-container">
+                        <p class="tag">Artist</p>
+                        <p class="tag">Coder</p>
+                        <p class="tag">Freelancer</p>
+                    </div>
+
+                    <!-- Profile section moved here for mobile -->
+                    <div class="profile mobile-only">
+                        <img src="content/profile.jpg" alt="Amanjeet Malik" />
+                        <div class="stats">
+                            <div class="experience-tag">
+                                <i class="fas fa-paint-brush experience-icon"></i>
+                                <div class="experience-text">
+                                    <span class="experience-years">6+ Years</span>
+                                    <span class="experience-desc">of Experience in Drawing</span>
+                                </div>
+                            </div>
+
+                            <!-- New Education Tag -->
+                            <div class="experience-tag">
+                                <i class="ri-code-s-slash-line experience-icon"></i>
+                                <div class="experience-text">
+                                    <span class="experience-years">CSE (AI & ML)</span>
+                                    <span class="experience-desc">Newton School of Technology</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="description">
+                        A Computer Science student specializing in AI & ML at Newton
+                        School of Technology, with a passion for both artistic creation
+                        and software development. Currently working as a Frontend
+                        Development Intern at
+                        <a href="https://www.linkedin.com/company/advith-itec-private-limited/" target="_blank"
+                            class="company-link">Advith Itec Pvt Ltd</a>, where
+                        I'm applying my skills in HTML, CSS, JavaScript, and React to
+                        build responsive web applications. Over the past year, I've
+                        expanded my technical portfolio to include Python and Java,
+                        completing over 50 DSA challenges on LeetCode to strengthen my
+                        problem-solving abilities.
+                    </p>
+
+                    <p class="description education">
+                        My technical expertise is complemented by a 6+ year background in
+                        artistic creation, allowing me to approach development with both
+                        analytical precision and creative innovation. I've successfully
+                        delivered projects including a menstrual health tracking
+                        application, combining functionality with intuitive design. My
+                        goal is to leverage my unique blend of technical and creative
+                        skills to develop solutions that are both functionally robust and
+                        aesthetically engaging, while continuing to grow as a professional
+                        in the technology industry.
+                    </p>
+
+                    <div class="actions">
+                        <a href="pages/artworks.html" class="artworks-link">Artworks</a>
+                        <a href="pages/contacts.html" class="draw-btn">Want Your Sketch?</a>
+                        <a href="content/Amanjeet-Resume.pdf" class="resume-btn" download><i
+                                class="ri-file-download-line"></i>Download Resume</a>
+                    </div>
+                </div>
+
+                <!-- Profile section for desktop view -->
+                <div class="profile desktop-only">
+                    <img src="content/profile.jpg" alt="Amanjeet Malik" />
+                    <div class="stats">
+                        <div class="experience-tag">
+                            <i class="fas fa-paint-brush experience-icon"></i>
+                            <div class="experience-text">
+                                <span class="experience-years">6+ Years</span>
+                                <span class="experience-desc">of Experience in Drawing</span>
+                            </div>
+                        </div>
+                        <div class="experience-tag">
+                            <i class="ri-code-s-slash-line experience-icon"></i>
+                            <div class="experience-text">
+                                <span class="experience-years">CSE (AI & ML)</span>
+                                <span class="experience-desc">Newton School of Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section">
+                <div class="skills-header">
+                    <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                    <p>Expertise across multiple technologies and growing</p>
+                </div>
+
+                <div class="skills-container">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="95">
+                                <div class="skill-info">
+                                    <i class="fab fa-html5"></i>
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="90">
+                                <div class="skill-info">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <i class="fab fa-js-square"></i>
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="70">
+                                <div class="skill-info">
+                                    <i class="fab fa-js-square"></i>
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="80">
+                                <div class="skill-info">
+                                    <i class="fab fa-react"></i>
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="75">
+                                <div class="skill-info">
+                                    <i class="fab fa-react"></i>
+                                    <span class="skill-name">React Native</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Programming Languages -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <i class="fab fa-python"></i>
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="75">
+                                <div class="skill-info">
+                                    <i class="fab fa-node-js"></i>
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="70">
+                                <div class="skill-info">
+                                    <i class="fas fa-server"></i>
+                                    <span class="skill-name">Express JS</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="80">
+                                <div class="skill-info">
+                                    <i class="fas fa-database"></i>
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="75">
+                                <div class="skill-info">
+                                    <i class="fas fa-database"></i>
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="70">
+                                <div class="skill-info">
+                                    <i class="fas fa-leaf"></i>
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="68">
+                                <div class="skill-info">
+                                    <i class="fas fa-database"></i>
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">68%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 68%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="65">
+                                <div class="skill-info">
+                                    <i class="fas fa-cogs"></i>
+                                    <span class="skill-name">Prisma ORM</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Services -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="90">
+                                <div class="skill-info">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="75">
+                                <div class="skill-info">
+                                    <i class="fas fa-cloud"></i>
+                                    <span class="skill-name">Supabase</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="70">
+                                <div class="skill-info">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span class="skill-name">OAuth 2.0</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="95">
+                                <div class="skill-info">
+                                    <i class="fas fa-palette"></i>
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="98">
+                                <div class="skill-info">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span class="skill-name">Digital Art</span>
+                                    <span class="skill-percentage">98%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 98%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <i class="fab fa-figma"></i>
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="90">
+                                <div class="skill-info">
+                                    <i class="fas fa-comments"></i>
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <i class="fas fa-crown"></i>
+                                    <span class="skill-name">Leadership</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="95">
+                                <div class="skill-info">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span class="skill-name">Creativity</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="88">
+                                <div class="skill-info">
+                                    <i class="fas fa-handshake"></i>
+                                    <span class="skill-name">Teamwork</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 88%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item" data-skill="85">
+                                <div class="skill-info">
+                                    <i class="fas fa-brain"></i>
+                                    <span class="skill-name">Critical Thinking</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <ul>
+                        <li>
+                            <i class="fas fa-university"></i> B.Tech CSE (AI & ML)
+                            <span>Newton School of Technology (2024-Present)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-award"></i> NTSE Scholar 2017
+                            <span>National Talent Search Examination</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-school"></i> Class 12 HBSE - 80%
+                            <span>2022</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-school"></i> Class 10 HBSE - 95%
+                            <span>2020</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                    <ul>
+                        <li>
+                            <i class="fas fa-laptop-code"></i> Frontend Development Intern
+                            <span>Advith Itec Pvt Ltd (Current)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-paint-brush"></i> Professional Sketch Artist
+                            <span>6+ Years Experience</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-code"></i> 50+ DSA Problems Solved
+                            <span>LeetCode Platform</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-project-diagram"></i> Multiple Web Projects
+                            <span>React, HTML, CSS, JS</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h2><i class="fas fa-star"></i> Achievements</h2>
+                    <ul>
+                        <li><i class="fas fa-futbol"></i> State Level Football Player</li>
+                        <li>
+                            <i class="fas fa-trophy"></i> Inter House Competition Winner
+                            <span>Art & Science</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i> Event Organizer
+                            <span>School Annual Day 2022</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i> Cultural Festival Leader
+                            <span>Team Management</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="creative-text">
+                        <i class="fas fa-magic"></i> Crafting Digital Experiences with Passion
+                    </div>
+                    <div class="copyright-text">
+                        <i class="fas fa-code copyright-icon"></i>
+                        <span>Created with</span>
+                        <i class="fas fa-heart heart-icon"></i>
+                        <span>by Amanjeet &copy; 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top">
+        <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">Amanjeet</a>
+        <nav class="desktop-nav">
+            <ul>
+                <li>
+                    <a href="../index.html"><i class="ri-home-smile-line"></i> Home</a>
+                </li>
+                <li>
+                    <a href="artworks.html"><i class="ri-gallery-line"></i> Sketches</a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="ri-folder-3-line"></i> Projects</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ri-chat-1-line"></i> Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-nav-container">
+    <nav class="mobile-nav">
+        <a href="../index.html"><i class="ri-home-smile-line"></i> Home</a>
+        <a href="artworks.html"><i class="ri-gallery-line"></i> Sketches</a>
+        <a class="active"><a href="#"><i class="ri-gallery-line"></i> Projects</a></a>
+        <a href="contacts.html"><i class="ri-chat-1-line"></i> Contacts</a>
+    </nav>
+</div>
+
+<div class="mobile-nav-overlay"></div>
+
+<body>
+    <main class="projects-container">
+        <div class="projects-header">
+            <h1>My Projects</h1>
+            <p>Explore my latest work and creative endeavors</p>
+
+            <!-- <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div> -->
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="../content/projects/pro1.png" alt="Project 1" />
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fa-solid fa-link"></i></a> -->
+                            <a href="https://github.com/AmanCrafts/portfolio" target="_blank" class="github-link"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A responsive portfolio website built with HTML, CSS, and
+                        JavaScript.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="../content/projects/pro2.png" alt="Project 2" />
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://amancrafts.github.io/Science-Myth-Project/" target="_blank"
+                                class="project-link"><i class="fa-solid fa-link"></i></a>
+                            <a href="https://github.com/AmanCrafts/Science-Myth-Project" target="_blank"
+                                class="github-link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Science Verified</h3>
+                    <p>A website that debunks scientific myths around daily life.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="../content/projects/pro3.png" alt="Project 3" />
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://menstrual-health-tracker.vercel.app/" class="project-link"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="https://github.com/AmanCrafts/Menstrual-Health-Tracker.git" class="github-link"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>FlowSync - Menstrual Health Tracker</h3>
+                    <p>
+                        A Web App designed to help users track their menstrual health and
+                        wellness.
+                    </p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>OAuth</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <!-- <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 4">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="github-link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-stack e-commerce website with payment integration.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Project 5 -->
+            <!-- <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 5">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="github-link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>UI/UX Case Study</h3>
+                    <p>Redesign of a financial app to improve user experience.</p>
+                    <div class="project-tags">
+                        <span>UI/UX</span>
+                        <span>Figma</span>
+                        <span>Prototyping</span>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Project 6 -->
+            <!-- <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 6">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="github-link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Fitness Tracker</h3>
+                    <p>Mobile app that helps users track workouts and nutrition.</p>
+                    <div class="project-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="creative-text">
+                    <i class="fas fa-magic"></i> Crafting Digital Experiences with
+                    Passion
+                </div>
+                <div class="copyright-text">
+                    <i class="fas fa-code copyright-icon"></i>
+                    <span>Created with</span>
+                    <i class="fas fa-heart heart-icon"></i>
+                    <span>by Amanjeet &copy; 2024</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/background.js"></script>
+</body>
+
+</html>
